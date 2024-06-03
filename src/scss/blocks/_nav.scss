@@ -1,11 +1,19 @@
-.header__nav {
-}
 .nav {
+	font-family: var(--font-family);
+	font-weight: 400;
 	font-size: 18px;
+	line-height: 180%;
+	text-transform: capitalize;
+	text-align: center;
+	color: var(--neutral-gray404040);
 }
 .nav__list {
 	display: flex;
 	column-gap: 30px;
-}
-.active {
+	a {
+		color: var(--neutral-gray404040);
+	}
+	a.active {
+		color: black;
+	}
 }

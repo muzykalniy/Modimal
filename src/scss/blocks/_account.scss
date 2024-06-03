@@ -1,0 +1,15 @@
+.header__account {
+}
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    a {
+        display: inline-block;
+        transition: all 0.2s ease-in;
+    }
+    a:hover {
+        background: var(--neutral-grayededed);
+    }
+}
