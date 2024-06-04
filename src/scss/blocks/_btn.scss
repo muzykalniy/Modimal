@@ -1,16 +1,23 @@
-.btn, 
-a.btn{
-    padding: 8px;
-    min-width: 185px;
-    height: 40px;
+.btn,
+a.btn {
+  display: inline-block; // чтобы ссылка нормально отрабатывала с блочными моделями и нигде не вылазила
+  padding: 8px;
+  min-width: 185px;
+  height: 40px;
 
-    background: var(--white);
+  background: var(--white);
 
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    text-transform: capitalize;
-    text-align: center;
-    color: var(--black);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--black);
+
+  &--small {
+    min-width: unset;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

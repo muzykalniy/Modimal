@@ -1,19 +1,19 @@
 .hero {
     padding-bottom: 103px;
-    height: 600px; 
+    height: 600px;
     background-color: #999;
-    background-image: url('./../../img/hero/hero.jpeg');
+    background-image: url("./../../img/hero/hero.jpeg");
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     @include mediaBg() {
-        background-image: url('./../img/hero@2x.jpg');
+        background-image: url("./../../img/hero/hero@2x.jpeg");
     } // это миксин для ритина экранов
 
-    .container{
+    .container {
         height: 100%; //задаем чтобы растянуть весь блок внутри по высоте и выравнять по флексу
-    } 
+    }
 }
 
 .hero__content {

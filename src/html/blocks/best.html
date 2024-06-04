@@ -1,0 +1,18 @@
+<section class="best">
+    <div class="container">
+        <div class="best__title--wrapper">
+            <h2 class="best__title title">Best Sellers</h2>
+            <div class="best__link">
+                <a href="#!" class="btn btn--small">View all</a>
+            </div>
+        </div>
+
+        <div class="best__cards">
+            <!-- @@include('blocks/card.html') -->
+            @@loop('blocks/card.html', './data/products.json')
+            <!-- цикл луп, первый аргумент путь к шаблону(карточке), далее путь к карточке -->
+            <article>02</article>
+            <article>03</article>
+        </div>
+    </div>
+</section>

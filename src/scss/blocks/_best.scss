@@ -1,0 +1,20 @@
+.best {
+}
+
+.best__title--wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best__title {
+}
+.best__link {
+}
+.title {
+}
+.best__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 колонки по 1 фракции
+  gap: 24px;
+}

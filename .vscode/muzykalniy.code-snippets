@@ -15,6 +15,28 @@
 		],
 		"description": "Log output to console"
 	},
+	/* Media Tablet */
+	"mediaTablet": {
+		"scope": "css,scss",
+		"prefix": "tablet",
+		"body": [
+			"@include tablet {",
+			"    ${1}",
+			"}"
+		],
+		"description": "tablet"
+	},
+	/* Media Mobile */
+	"mediaMobile": {
+		"scope": "css,scss",
+		"prefix": "mobile",
+		"body": [
+			"@include mobile {",
+			"    ${1}",
+			"}"
+		],
+		"description": "mobile"
+	},
 	/* CSS, SCSS snippets */
 	"bgimg: Background image": {
 		"scope": "css,scss",
@@ -28,27 +50,6 @@
 			"$2"
 		],
 		"description": "bgimg: Background image"
-	},
-	/* Media Mobile */
-	"mediaMobile": {
-		"scope": "css,scss",
-		"prefix": "mobile",
-		"body": [
-			"@include mediaMobile {",
-			"   ${1}",
-			"}"
-		],
-		"description": "mediaMobile"
-	},
-	"mediaTablet": {
-		"scope": "css,scss",
-		"prefix": "tablet",
-		"body": [
-			"@include mediaTablet {",
-			"   ${1}",
-			"}"
-		],
-		"description": "mediaTablet"
 	},
 	"bgicon: Background icon": {
 		"scope": "css,scss",
@@ -199,5 +200,54 @@
 			"}"
 		],
 		"description": "btn: CSS Button class"
+	},
+	"HTML section": {
+		"prefix": "sect",
+		"body": [
+			"<section class=\"section-${1:example}\">",
+			"	<h2 class=\"visually-hidden\">${2:title}</h2>",
+			"	<div class=\"container\">",
+			"		<h2 class=\"section-${1:example}__title\">${2:title}</h2>",
+			"		<div class=\"section-${1:example}__${3:grid}\">",
+			"			${4:Content}",
+			"		</div>",
+			"	</div>",
+			"</section>"
+		],
+		"description": "HTML section"
+	},
+	"CSS BG retina": {
+		"prefix": "mediaBg",
+		"body": [
+			"@include mediaBg() {",
+			"	background-image: url('./../img/${1:example}@2x.${2:jpg}');",
+			"}"
+		],
+		"description": "CSS BG retina"
+	},
+	"CSS img set": {
+		"prefix": "imgSet",
+		"body": [
+			"background-image: image-set(",
+			"	url('./../img/${1:example}') 1x,",
+			"	url('./../img/${1:example}') 2x);"
+		],
+		"description": "CSS img set"
+	},
+	"SVG icon sprite": {
+		"prefix": "svgIcon",
+		"body": [
+			"<svg class=\"icon icon--${1:example}\">",
+			"	<use href=\"./img/svgsprite/sprite.symbol.svg#${1:example}\"></use>",
+			"</svg>"
+		],
+		"description": "SVG icon sprite"
+	},
+	"Image srcset": {
+		"prefix": "imgr",
+		"body": [
+			"<img src=\"./../img${1:/}\" srcset=\"./../img${1:/}\" alt=\"${2:Alt}\">"
+		],
+		"description": "Image srcset"
 	}
 }

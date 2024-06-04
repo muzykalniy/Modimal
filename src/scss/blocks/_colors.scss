@@ -1,0 +1,15 @@
+.color {
+  width: 24px;
+  height: 24px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.color--black {
+  background-color: var(--black);
+}
+.color--blue {
+  background-color: #7dc3eb;
+}
+.color--green {
+  background-color: var(--primary);
+}

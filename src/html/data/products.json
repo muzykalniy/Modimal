@@ -1,0 +1,23 @@
+[
+  {
+    "img": "01",
+    "title": "Tailored Stretch",
+    "desc": "Turn It Up Pants",
+    "price": "180",
+    "colors": ["black", "blue", "green"]
+  },
+  {
+    "img": "02",
+    "title": "Technical Silk",
+    "desc": "Make A Splash",
+    "price": "120",
+    "colors": ["olive", "navy", "black"]
+  },
+  {
+    "img": "03",
+    "title": "Cool Weave",
+    "desc": "Anywhere Dress",
+    "price": "210",
+    "colors": ["pink", "olive", "green"]
+  }
+]
