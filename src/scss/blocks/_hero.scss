@@ -1,0 +1,37 @@
+.hero {
+    padding-bottom: 103px;
+    height: 600px; 
+    background-color: #999;
+    background-image: url('./../../img/hero/hero.jpeg');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include mediaBg() {
+        background-image: url('./../img/hero@2x.jpg');
+    } // это миксин для ритина экранов
+
+    .container{
+        height: 100%; //задаем чтобы растянуть весь блок внутри по высоте и выравнять по флексу
+    } 
+}
+
+.hero__content {
+    align-items: flex-start;
+    height: 100%; //задаем чтобы растянуть весь блок внутри по высоте и выравнять по флексу
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 27px;
+}
+
+.hero__title {
+    max-width: 494px;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: var(--black);
+}

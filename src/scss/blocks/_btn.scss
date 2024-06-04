@@ -1,0 +1,16 @@
+.btn, 
+a.btn{
+    padding: 8px;
+    min-width: 185px;
+    height: 40px;
+
+    background: var(--white);
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--black);
+}
