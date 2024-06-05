@@ -1,3 +1,25 @@
 .swiper {
     width: 100%;
+    padding-bottom: 32px !important;
 }
+.swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    background-color: var(--neutral-grayadadad) !important;
+    opacity: 1 !important; // отменяем опасити что все кружки сделать одинакового цвета
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--neutral-graydfdfdf) !important;
+} // задаем свойства для активного кружка
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+} //  отступы слева/справа 16пкс, значит делим на 2 и получаем 8
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0 !important;
+} // чтобы свайпер паджинейшн лежал четко внутри слайдер
