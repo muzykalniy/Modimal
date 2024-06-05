@@ -9,10 +9,19 @@
 
         <div class="best__cards">
             <!-- @@include('blocks/card.html') -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    @@loop('blocks/card.html', './data/products.json')
+                    <!-- цикл луп, первый аргумент путь к шаблону(карточке), далее путь к карточке -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+            </div>
 
-            @@loop('blocks/card.html', './data/products.json')
-            <!-- цикл луп, первый аргумент путь к шаблону(карточке), далее путь к карточке -->
         </div>
     </div>
 </section>
