@@ -13,13 +13,12 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
-
-  loop: true,
-
-  // If we need pagination
+  slidesPerView: 3, // 3 слайда за 1 раз
+  spaceBetween: 24, // расстояние между слайдами
+  loop: true, // зацикленность
   pagination: {
     el: ".swiper-pagination",
+    clickable: true, // чтоб по пагинации можно было бы кликать
   },
 
   // // Navigation arrows

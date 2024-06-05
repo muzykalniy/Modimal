@@ -14,7 +14,7 @@
 .title {
 }
 .best__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3 колонки по 1 фракции
-  gap: 24px;
-}
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr); // 3 колонки по 1 фракции
+  // gap: 24px;
+} // грид отключаем, потому что далее будем работать со слайдером и его настройками
