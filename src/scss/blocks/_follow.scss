@@ -1,0 +1,23 @@
+.follow {
+}
+
+.follow__title {
+    margin-bottom: 24px;
+}
+
+.follow__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+
+    & > *:first-child {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    } // означает что любой первый элемент будет занимать 2 на 2
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; //чтобы заполнить и правильно масштабировать внутри блока
+    }
+}
