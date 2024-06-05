@@ -4,13 +4,13 @@
         <div class="collection__cols">
 
             <div class="collection__col">
-                @@include('blocks/card-collection.html')
-                <article> 02</article>
+                <!-- @@include('blocks/card-collection.html') -->
+                @@loop('blocks/card-collection.html', "./data/collection-01.json")
             </div>
 
             <div class="collection__col">
-                <article> 03</article>
-                <article> 04</article>
+                @@loop('blocks/card-collection.html', "./data/collection-02.json")
+
             </div>
 
         </div>
