@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile {
+    margin-bottom: 8px;
+  }
 }
 .best__title {
 }
@@ -18,3 +21,9 @@
   // grid-template-columns: repeat(3, 1fr); // 3 колонки по 1 фракции
   // gap: 24px;
 } // грид отключаем, потому что далее будем работать со слайдером и его настройками
+
+.best__link {
+  @include mobile {
+    display: none;
+  }
+}

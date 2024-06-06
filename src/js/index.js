@@ -13,9 +13,18 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3, // 3 слайда за 1 раз
-  spaceBetween: 24, // расстояние между слайдами
+  // slidesPerView: 3, // 3 слайда за 1 раз (UPD.: мы сделаем сначала для отображения в адаптиве, а потом через брейкпоинт на декстопе
+  slidesPerView: 2,
+  spaceBetween: 16, // расстояние между слайдами в адаптиве
   loop: true, // зацикленность
+
+  breakpoints: {
+    780: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }, // первая точка перелома
+  },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true, // чтоб по пагинации можно было бы кликать

@@ -1,12 +1,20 @@
 .swiper {
     width: 100%;
     padding-bottom: 32px !important;
+    @include mobile {
+        padding-bottom: 22px !important;
+    }
 }
 .swiper-pagination-bullet {
     width: 14px !important;
     height: 14px !important;
     background-color: var(--neutral-grayadadad) !important;
     opacity: 1 !important; // отменяем опасити что все кружки сделать одинакового цвета
+
+    @include mobile {
+        width: 8px !important;
+        height: 8px !important;
+    }
 }
 .swiper-pagination-bullet-active {
     background-color: var(--neutral-graydfdfdf) !important;
