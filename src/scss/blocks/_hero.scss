@@ -3,7 +3,7 @@
     height: 600px;
     background-color: #999;
     background-image: url("./../../img/hero/hero.jpeg");
-    background-position: center center; /* x y */
+    background-position: left center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -11,6 +11,10 @@
         background-image: url("./../../img/hero/hero@2x.jpeg");
     } // это миксин для ритина экранов
 
+    @include mobile {
+        height: 551px;
+        padding-bottom: 16px;
+    }
     .container {
         height: 100%; //задаем чтобы растянуть весь блок внутри по высоте и выравнять по флексу
     }
@@ -23,6 +27,10 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 27px;
+
+    @include mobile {
+        gap: 32px;
+    }
 }
 
 .hero__title {
@@ -34,4 +42,7 @@
     line-height: 180%;
     text-transform: capitalize;
     color: var(--black);
+    @include mobile {
+        max-width: 168px;
+    }
 }
