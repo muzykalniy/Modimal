@@ -1,6 +1,10 @@
 .header {
 	padding: 16px 0 18px;
 
+	position: relative; // чтобы мочь задать з-индекс
+	z-index: 199; // потому что у навигации и так большой з-индекс и надо его перебить
+	background-color: #fff;
+
 	&__row {
 		display: flex;
 		justify-content: space-between;

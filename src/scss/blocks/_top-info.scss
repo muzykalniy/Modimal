@@ -1,6 +1,8 @@
 .top-info {
     padding: 8px 0 7px;
     background: var(--primary-primary-600);
+    position: relative; // чтобы мочь задать з-индекс
+    z-index: 199; // потому что у навигации и так большой з-индекс и надо его перебить
 
     font-family: var(--font-family);
     font-weight: 600;
