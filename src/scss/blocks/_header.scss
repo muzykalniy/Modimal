@@ -6,6 +6,9 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+	@include mobile {
+		padding: 4px 0 8px;
+	}
 }
 
 .header__logo {
@@ -13,6 +16,24 @@
 }
 
 .header__nav {
+	margin-left: auto;
+	@include mobile {
+		display: none;
+	}
+}
+
+.header__account {
+	&--first {
+		margin-left: auto; // прижимаем иконки вправо
+		margin-right: 24px; // чтобы сохранить отступ справа
+		@include tablet {
+			margin-right: 12px;
+		}
+		@include mobile {
+			order: -1;
+			margin-left: unset;
+		}
+	} // при помощи модификатора мы сдвигаем вправо две иконки чтобы сделать составной блок
 }
 
 // ==============================================
