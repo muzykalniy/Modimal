@@ -3,7 +3,7 @@
     height: 600px;
     background-color: #999;
     background-image: url("./../../img/hero/hero.jpeg");
-    background-position: left center; /* x y */
+    background-position: 30% center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -44,5 +44,6 @@
     color: var(--black);
     @include mobile {
         max-width: 168px;
+        font-size: 20px;
     }
 }
