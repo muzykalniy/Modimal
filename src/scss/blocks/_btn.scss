@@ -30,4 +30,14 @@ a.btn {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  &--mobile-wide {
+    @include mobile {
+      min-width: unset;
+      width: 100%;
+      text-align: left;
+
+      padding: 8px 16px;
+    }
+  }
 }
