@@ -7,4 +7,4 @@
 - accordion JS
 - swiper
 
-[Watch demo] https://muzykalniy.github.io/Modimal/
+[Watch demo](https://muzykalniy.github.io/Modimal/)
