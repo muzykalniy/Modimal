@@ -1,4 +1,4 @@
-# Layout of Modimal landing page using GULP package
+# Adaptive layout of Modimal landing page using GULP package
 
 - HTML,
 - SCSS,
