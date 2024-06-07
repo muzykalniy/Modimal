@@ -48,6 +48,18 @@
 	text-transform: capitalize;
 	color: var(--black);
 }
+.mobile-links__parent-btn__icon {
+	transition: all 0.2s ease-in;
+} // чтобы посмотреть как она поворачивается
+.active .mobile-links__parent-btn__icon {
+	transform: rotate(-180deg);
+} // когда у нее будет родитель с классом active, она будет поворачиваться
+.mobile-sub {
+	max-height: 0px; // скрываем чтобы потом открыть аккордеоном
+	overflow: hidden; // чтобы контент не вываливался
+	transition: all 0.2s ease-in;
+}
+
 .mobile-sub-list {
 	display: grid;
 	gap: 16px;
